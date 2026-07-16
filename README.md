@@ -1,20 +1,57 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+  
+# ┌──────────────────────────────────────────────┐
+# │                                              │
+# │       GitHub Pull Request Review Agent       │
+# │                                              │
+# └──────────────────────────────────────────────┘
+
+An AI-powered assistant that automatically reviews your GitHub Pull Requests.
 </div>
 
-# Run and deploy your AI Studio app
+## 🌟 Overview
+This project is an automated agent that analyzes your GitHub PRs, providing intelligent feedback, code reviews, and suggestions to streamline your development workflow.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
+- **Automated Code Review:** Instantly reviews code changes on pull requests.
+- **AI-Powered Insights:** Uses Gemini AI to understand context and detect issues.
+- **Dashboard Interface:** Includes a modern React frontend to manage repositories, view reviews, and check analytics.
 
-View your app in AI Studio: https://ai.studio/apps/a8099275-7cad-490f-ae0c-5418e60cf7f5
+## 🛠️ Tech Stack
+- **Frontend:** React, Tailwind CSS, Vite, Framer Motion
+- **Backend:** Node.js / Express, TypeScript
+- **AI Integration:** Google GenAI API
 
-## Run Locally
+## 💻 Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
+- Node.js (v18+ recommended)
+- A Gemini API Key
 
+### Installation & Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Configure Environment Variables:**
+   Rename `.env.example` to `.env` or `.env.local` and add your API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+3. **Start the Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+## 🧪 Testing
+The project uses Vitest for testing. To run the test suite:
+```bash
+npm run test
+```
+To run tests in watch mode:
+```bash
+npm run test:watch
+```
