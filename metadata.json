@@ -1,0 +1,6 @@
+{
+  "name": "GitHub Pull Request Review Agent",
+  "description": "An AI-powered agent that automatically reviews GitHub pull requests, detects code smells, bugs, security vulnerabilities, and posts high-quality feedback back to GitHub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
