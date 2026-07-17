@@ -40,7 +40,7 @@
       "state": "open",
       "sourceBranch": "feat/user-signup",
       "targetBranch": "main",
-      "headSha": "commit_cen9mx5b9",
+      "headSha": "commit_o16xudlat",
       "baseSha": "2b9a7f3d1428c8cb01ac562095f90b5e1b6fce10",
       "authorUsername": "junior_dev_bob",
       "userAvatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120",
@@ -224,6 +224,45 @@
       "comments": [
         {
           "id": "comm-mock-1784210799868",
+          "filePath": "UserService.py",
+          "lineNumber": 18,
+          "body": "### ⚠️ **SQL Injection susceptibility** [Critical - Security]\n\nString formatting on raw queries poses injection hazard.\n\n💡 **Suggestion:**\n```python\ncursor.execute(\"SELECT * FROM users WHERE email = %s\", (email,))\n```",
+          "source": "AI_AGENT"
+        }
+      ]
+    },
+    {
+      "id": "rev-1784295453296",
+      "pullRequestId": "pr-1",
+      "commitSha": "commit_o16xudlat",
+      "recommendation": "Request Changes",
+      "overallScore": 5.2,
+      "maintainabilityScore": 6,
+      "securityScore": 3,
+      "performanceScore": 7,
+      "readabilityScore": 6,
+      "testingScore": 4,
+      "created_at": "2026-07-17T13:37:33.296Z",
+      "summary": "### 💡 Sandbox Mock Review\nConfigure your **GEMINI_API_KEY** in the secrets settings to run live AI-powered PR reviews.\n\nThis is a mock analysis for preview demonstration purposes. Your code is clean but SQL injection risk still persists on line 18.",
+      "positiveObservations": "• Added safe return boundary checking on empty result rows.",
+      "criticalIssuesSummary": "• Hardcoded SQL injection susceptibility remains unresolved in string query format.",
+      "recommendedFixes": "1. Upgrade DB connection wrapper to use parameterized tuple variables.",
+      "issues": [
+        {
+          "id": "iss-mock-1784295453297",
+          "severity": "Critical",
+          "category": "Security",
+          "filePath": "UserService.py",
+          "lineNumber": 18,
+          "title": "Dynamic SQL Concatenation",
+          "description": "Direct formatting of query strings makes parsing boundaries insecure against input-based SQL injections.",
+          "suggestion": "Use parameterized execute arguments instead of interpolation.",
+          "isResolved": false
+        }
+      ],
+      "comments": [
+        {
+          "id": "comm-mock-1784295453297",
           "filePath": "UserService.py",
           "lineNumber": 18,
           "body": "### ⚠️ **SQL Injection susceptibility** [Critical - Security]\n\nString formatting on raw queries poses injection hazard.\n\n💡 **Suggestion:**\n```python\ncursor.execute(\"SELECT * FROM users WHERE email = %s\", (email,))\n```",

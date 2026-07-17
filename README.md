@@ -9,6 +9,11 @@
 
   <!-- Badges -->
   <p align="center">
+    <a href="https://pr-agent-tji2.onrender.com">
+      <img src="https://img.shields.io/badge/Open_Live_App-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Open Live App" />
+    </a>
+  </p>
+  <p align="center">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
     <img src="https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=black" alt="React" />
