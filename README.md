@@ -283,20 +283,11 @@ Please ensure you write tests for any new features and follow the existing code 
 ## 📄 License
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## 🙏 Acknowledgements
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Google Gemini API](https://ai.google.dev/)
-- [Node.js](https://nodejs.org/)
 
 ## 📬 Contact
 **MathivathaniT**
-
-- LinkedIn: [Your LinkedIn Profile](#)
 - GitHub: [MathivathaniT](https://github.com/MathivathaniT)
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- Portfolio: [Your Portfolio Website](#)
+- Email: [mathivathanitharanikumar@gmail.com](mathivathanitharanikumar@gmail.com)
 
 ---
 *If you find this project useful, please consider giving it a ⭐ on GitHub!*
